@@ -1,0 +1,56 @@
+@import url(drop_down.css);
+
+@import url(landing_page.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  z-index: 12;
+}
+
+button {
+  font-size: larger;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+button.shower {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  background-color: transparent;
+  border-radius: 20px;
+  position: relative;
+  transition: all ease-in-out 300ms;
+  margin: 1rem;
+  right: 0;
+  z-index: 20;
+}
+
+button.shower svg line {
+  stroke: white;
+  transition: all ease-in-out 300ms;
+}
+
+button.shower:hover {
+  border-color: rgb(181, 8, 181);
+}
+
+button.shower:hover svg line {
+  stroke: rgb(181, 8, 181);
+}
+
+/* JS */
+.active_for_drop {
+  opacity: 0;
+}

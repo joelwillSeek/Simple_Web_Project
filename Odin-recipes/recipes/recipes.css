@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    margin: 20px 0px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.top{
+    margin-top: 0;
+}
+h1:hover{
+    color: orange;
+}
+h2{
+    transition: all ease-in-out 300ms;
+}
+h2:hover{
+    color: orange;
+    font-size: 50px;
+}
+li:hover{
+    color: orange;
+    cursor: pointer;
+}

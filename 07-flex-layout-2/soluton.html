@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+        :root{
+            --left-panel:#4169E1;
+            --purpleish:#8B008B;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .navbar{
+            max-width: 100%;
+            font-family: 'Sigmar', cursive;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            background-color: var(--purpleish);
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .main .leftpanel{
+            max-width: 50%;
+            height: 100%;
+            flex-basis: 300px;
+            flex-grow: 0;
+            flex-shrink: 1;
+            background-color: var(--left-panel);
+            color: white;
+        }
+        .main .leftpanel ul{
+            list-style: none;
+        }
+        .main .leftpanel ul li{
+            margin: 10px 0;
+            padding: 10px;
+            width: 50%;
+            text-align: center;
+            transition: background-color ease-in-out 300ms;
+        }
+        .main .leftpanel ul li:hover{
+            background-color: var(--purpleish);
+        }
+        .main .rightpanel{
+            flex-basis: 600px;
+            flex-grow: 1;
+            flex-shrink: 0.8;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .main .rightpanel .card{
+            box-shadow: 0px 0px 10px gray;
+            padding: 10px;
+            min-width: 200px;
+            max-height: 500px;
+            min-height: 200px;
+            border-radius: 20px;
+            flex-basis: 70px;
+            flex-shrink: 0;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main .rightpanel .card p{
+            min-width: 100px;
+            max-height: 500px;
+            min-height: 200px;
+        }
+        .footer{
+            max-width: 100%;
+            background-color: #eee;
+            color: #8B008B;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="navbar">My Awesome Website</h1>
+
+    <div class="main">
+        <div class="leftpanel">
+            <ul>
+                <li>link one</li>
+                <li>link two</li>
+                <li>link three</li>
+                <li>link four</li>
+            </ul>
+        </div>
+        <div class="rightpanel">
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis voluptatum beatae eum ut rem ipsa quo, est debitis 
+                    tempore architecto et minus magnam fugiat sit ipsum tempora 
+                    tenetur ad quos?
+                </p>
+            </div>
+    </div>
+        
+    </div>
+    <div class="footer"><h1>The Odin Project</h1></div>
+
+    
+    
+    
+</body>
+</html>

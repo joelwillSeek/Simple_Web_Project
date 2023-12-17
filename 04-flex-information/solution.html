@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Info</title>
+    <style>
+        #t{
+            text-align: center;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .container > .card{
+           width: 100px;
+        }
+        .container > .card > img{
+            width: 100%;
+        }
+        .container > .card > h6{
+            font-size: 0.7em;
+            text-align: center;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="t">Information!</h1>
+    <div class="container">
+        <div class="card">
+            <img src="img/barberry.png" alt="Barberry">
+            <h6>This is a type of plant. We lobe this one.</h6>
+        </div>
+        <div class="card">
+            <img src="img/chilli.png" alt="Barberry">
+            <h6>This is another type of plant. Isn't it nice?</h6>
+        </div>
+        <div class="card">
+            <img src="img/pepper.png" alt="Barberry">
+            <h6>We have so many plants, yay plants.</h6>
+        </div>
+        <div class="card">
+            <img src="img/saffron.png" alt="Barberry">
+            <h6>I'm running out of things to say about plants.</h6>
+        </div>
+    </div>
+</body>
+</html>

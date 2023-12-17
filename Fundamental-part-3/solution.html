@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals Part 3</title>
+</head>
+<body>
+    
+    <script>
+        function add7(num){
+            return num+7;
+        }
+        function multipy(num1,num2){
+            return num1*num2;
+        }
+
+        /**
+         * @param {string} str
+         * **/
+        function capitalize(str){
+            return str.charAt(0).toUpperCase()+str.slice(1);
+        }
+        /**
+         * @param {string} strlast
+         * **/
+        function lastLetter(strlast){
+            return strlast.charAt(strlast.length-1);
+        }
+
+        console.log(add7(10)+" "+multipy(5,1)+" "+capitalize('capitalize')+" "+lastLetter('last'));
+        
+        function FuzzBuzz(){
+            let userin=Number(prompt("enter number"));
+            for(let i=1;i<=userin;i++){
+                if(i%3==0){
+                    console.log("Fuzz");
+                    continue;
+                }else if(i%5==0){
+                    console.log("Buzz");
+                    continue;
+                }
+                console.log(i);
+            }
+        }
+
+        FuzzBuzz();
+   
+   </script>
+</body>
+</html>

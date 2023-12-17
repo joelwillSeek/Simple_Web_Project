@@ -1,0 +1,18 @@
+a{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+h1{
+    margin: 10px;
+    text-decoration: underline;
+}
+h1:hover{
+    color: red;
+}

@@ -1,0 +1,11 @@
+.bac{
+    background-color: black;
+    color: white;
+}
+.yel{
+    background-color: yellow;
+    color: black;
+}
+.bac,.yel{
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}

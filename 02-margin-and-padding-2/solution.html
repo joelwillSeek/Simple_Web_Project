@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and Padding #2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: white;
+            margin: 50px 200px;
+            padding: 8px 30px;
+        }
+        body{
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 100%;
+            background-color: lavender;
+        }
+        .inner{
+            background-color: lightblue;
+            margin: 10px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        .intro{
+            font-weight: 1000;
+            font-size: large;
+        }
+        .end{
+            text-align: center;
+        }
+        .end > button{
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro inner">I'm a card</div>
+        <div class="content inner">I have content inside me..lorem ipsum blah blah blah. Here's some styff you need to read</div>
+        <div class="end inner">and a<br> <button>BIG BUTTON</button></div>
+    </div>
+</body>
+</html>
